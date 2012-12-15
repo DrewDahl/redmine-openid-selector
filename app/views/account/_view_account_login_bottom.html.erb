@@ -1,8 +1,8 @@
 <% content_for :header_tags do %>
     <%= stylesheet_link_tag 'openid', :plugin => 'redmine_openid_selector' %>
+    <%= javascript_include_tag 'openid-selector/js/prototype', :plugin => 'redmine_openid_selector' %>
     <%= javascript_include_tag 'openid', :plugin => 'redmine_openid_selector' %>
     <%= javascript_include_tag 'openid-selector/js/openid-en', :plugin => 'redmine_openid_selector' %>
-openid-selector/js/prototype.js
     <script type="text/javascript">
             document.observe('dom:loaded', function() {
                 openid.img_path = "<%= Redmine::Utils.relative_url_root %>/plugin_assets/redmine_openid_selector/javascripts/openid-selector/images/";
